@@ -1,0 +1,67 @@
+doctype html
+html
+head
+    link(rel="stylesheet", href="../css/main.css")
+    script(src="../js/index.js")
+body
+    #container
+        #signin-box
+            #logo
+                img(src="../asset/main_logo_blue.svg", alt="")
+            #login-button
+                button(class = "style-button") 
+                    img(src="../asset/facebook.svg", alt="" class = "logo-social")
+                    h3 Sign in with Facebook
+                button(class = "style-button") 
+                    img(src="../asset/google.svg", alt="" class = "logo-social")
+                    h3 Sign in with Google
+                button(class = "style-button") 
+                    img(src="../asset/github.svg", alt="" class = "logo-social")
+                    h3 Sign in with Github
+                button(class = "style-button") 
+                    img(src="../asset/twitter.svg", alt="" class = "logo-social")
+                    h3 Sign in with Twitter
+            p.seperator 
+                span OR
+            
+            .signin-form
+                .form-group
+                    span Email or Username
+                    input(type="text" class="form-control")
+                .form-group
+                    span Password
+                    input(type="text" class="form-control")
+                .form-group
+                    button(class = "signin-button") SIGN IN
+                .form-group
+                    a(href="" class = "site-forget-pass") Forgot Password
+                    .signup
+                        span No account? 
+                        a(href="") Sign up here!
+        #content
+            #content-title
+                span(class = "information") Get your 
+                span(class = "information-bold") Coding Report 
+                span(class = "information") and Prepare for 
+                span(class = "information-bold") Interview
+            p.content-info Take our Certified Assessment to see how you compare to the rest of the industry.
+            #content-video
+                #video-background
+                    .btn-play
+                        img(src="../asset/play-button.svg" id="btn-play")
+                video(width="600", height="338" controls id="video-play")
+                    source(src="../asset/codesignal.mp4" type="video/mp4")
+            #user-information 
+                .blurb
+                    img(src="../asset/radar_graph.svg", alt="")
+                    span Certified Assessment
+                    p See where you stand in the market. Then, attach your results to job applications and increase your chances of getting noticed.
+                
+                .blurb
+                    img(src="../asset/chat_bubbles.svg", alt="")
+                    span Interview Practice
+                    p Sharpen your interview skills by practicing in a real-world coding environment with real questions asked by top tech companies
+                .blurb
+                    img(src="../asset/coding_score.svg", alt="")   
+                    span Coding Score
+                    p Know where your strengths are and where you can improve with overall, subject, and language-specific Coding Scores™.
